@@ -3,10 +3,10 @@ from rest_framework.routers import DefaultRouter
 from .views import MusicianViewSet
 
 router = DefaultRouter()
-router.register('musicians', MusicianViewSet)
+router.register("musicians", MusicianViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]
 
 app_name = "musician"
